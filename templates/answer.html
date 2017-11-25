@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+{% block body %}
+    {% for answer in answers %}
+        <h3>№{{ loop.index0 + 1 }}</h3>
+        <p class="lead">
+            <b>Расстояние: </b> {{ answer[0] }}<br>
+            <b>Вопрос: </b>{{ answer[1] }}<br>
+            <b>Ответ: </b>{{ answer[2] }}<br>
+        </p><br><br>
+    {% endfor %}
+
+{% endblock %}

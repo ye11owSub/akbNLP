@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AkbTest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{{ url_for("static",filename="favicon.ico") }}">
+    <link href="{{ url_for("static",filename="css/bootstrap.min.css") }}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="inner cover">
+                <h1 class="cover-heading">Маскаев</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-sm-offset-2">
+                {% block body %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="{{ url_for("static",filename="css/bootstrap.min.css") }}"></script>
+</body>
+</html>
